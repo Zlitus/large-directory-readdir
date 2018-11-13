@@ -7,9 +7,14 @@ const ls = require('ls');
 
 ls('./very-large-directory').then((output) => {
 	var i = 0;
-	output.on('line', function(line) {
+	output.on('line', (line) => {
 		i++;
 		console.log(i+') '+line);
 	});
 });
 ```
+
+## To do:
+- Security check of the parameter
+- Adding options (timeout, recursive, find only files / folders, match filenames by regex, etc)
+- Do fallbacks for Windows & systems without the `find` command
