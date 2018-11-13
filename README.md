@@ -14,6 +14,8 @@ ls('./very-large-directory').then((output) => {
 });
 ```
 
+<p align="center"><img src="/img/demo.gif?raw=true"/></p>
+
 ## To do:
 - Security check of the parameter
 - Adding options (timeout, recursive, find only files / folders, match filenames by regex, etc)
